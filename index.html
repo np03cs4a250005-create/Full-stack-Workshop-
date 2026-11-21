@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <div class="header-container">
-            <img src="images/profile.png" alt="Profile Photo" class="profile-img">
+            <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
             <h1>Personal Portfolio</h1>
-            <p>Welcome to my personal portfolio website.</p>
+            <p class="tagline">Aspiring Web Developer &amp; Tech Enthusiast</p>
         </div>
         <!-- Navigation Bar -->
         <nav>
@@ -29,42 +36,75 @@
     <main>
         <!-- About Section -->
         <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! Welcome to my personal portfolio. I am learning web development using HTML, CSS, and Git to create clean, responsive, and accessible web pages.</p>
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <p>
+                Hello! Welcome to my personal portfolio. I am a passionate web development student focused on creating clean, responsive, and user-friendly websites. Currently learning semantic HTML, modern CSS, and Git version control.
+            </p>
+            <div class="skills-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Git &amp; GitHub</span>
+                <span class="tag">Responsive Design</span>
+            </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <img src="images/screenshot.png" alt="Portfolio Website Screenshot" class="project-img">
-                <h3>Personal Portfolio Website</h3>
-                <p>My first personal portfolio web page built entirely with semantic HTML and styled with CSS, tracked and version-controlled with Git.</p>
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <div class="underline"></div>
             </div>
-            <div class="project-card">
-                <img src="images/screenshot.png" alt="Dummy Project Screenshot" class="project-img">
-                <h3>Dummy Project</h3>
-                <p>A sample project demonstrating responsive web design principles and semantic structure.</p>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/screenshot.png" alt="Portfolio Website Screenshot" class="project-img">
+                    <div class="project-info">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>My first personal portfolio web page built entirely with semantic HTML, modern CSS styling, and Git version control.</p>
+                        <a href="#about" class="project-link">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Dummy Project) -->
+                <div class="project-card">
+                    <img src="images/screenshot.png" alt="Dummy Project Screenshot" class="project-img">
+                    <div class="project-info">
+                        <h3>Responsive Showcase</h3>
+                        <p>A sample project demonstrating mobile-first layout, CSS grid, flexible boxes, and clean accessible markup.</p>
+                        <a href="#projects" class="project-link">View Details &rarr;</a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact</h2>
-            <form action="#" method="post">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            <p class="contact-desc">Feel free to reach out to me for inquiries, collaborations, or just a quick hello!</p>
+
+            <form action="#" method="post" class="contact-form">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                 </div>
+
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                 </div>
+
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
                 </div>
-                <button type="submit">Submit</button>
+
+                <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </section>
     </main>
@@ -73,5 +113,6 @@
     <footer>
         <p>&copy; 2026 Personal Portfolio. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
