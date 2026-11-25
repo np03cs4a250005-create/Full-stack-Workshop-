@@ -1,118 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <!-- Favicon -->
+    <title>SoloLearn - Student Learning Resource Platform</title>
+    
     <link rel="icon" href="favicon.ico">
-    <!-- Google Font: Poppins -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="header-container">
-            <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
-            <h1>Personal Portfolio</h1>
-            <p class="tagline">Aspiring Web Developer &amp; Tech Enthusiast</p>
+    <header class="navbar">
+        <div class="branding">
+            <h1 class="logo">Solo<span>Learn</span></h1>
+            <p class="tagline">Student Learning Resource Platform</p>
         </div>
-        <!-- Navigation Bar -->
-        <nav>
+
+        <nav class="nav-menu">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#quiz">Daily Quiz</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#announcements">Announcements</a></li>
             </ul>
         </nav>
+
+        <div class="user-stats">
+            <span class="stat-pill streak">5 Day Streak</span>
+            <span class="stat-pill xp">850 XP</span>
+            <img src="images/profile.jpg" alt="Student Profile Avatar" class="profile-thumb">
+        </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <div class="underline"></div>
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h2>Welcome to Your Learning Hub!</h2>
+            <p>Access lecture materials, interactive coding exercises, video tutorials, and academic announcements — all
+                designed to support your Full Stack Web Development journey.</p>
+            <div class="hero-buttons">
+                <a href="#modules" class="btn btn-primary">Browse Modules &rarr;</a>
+                <a href="#multimedia" class="btn btn-outline">Watch Video Lesson</a>
             </div>
-            <p>
-                Hello! Welcome to my personal portfolio. I am a passionate web development student focused on creating clean, responsive, and user-friendly websites. Currently learning semantic HTML, modern CSS, and Git version control.
-            </p>
-            <div class="skills-tags">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-                <span class="tag">Git &amp; GitHub</span>
-                <span class="tag">Responsive Design</span>
-            </div>
-        </section>
+        </div>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="section-title">
-                <h2>My Projects</h2>
-                <div class="underline"></div>
+        <div class="hero-card">
+            <span class="badge">In Progress</span>
+            <h3>Full Stack Web Development</h3>
+            <p class="subtext">Week 1 &bull; HTML5 Semantic Structure &amp; CSS Layouts</p>
+
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Course Progress</span>
+                    <span class="progress-num">75%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
             </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="images/screenshot.png" alt="Portfolio Website Screenshot" class="project-img">
-                    <div class="project-info">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>My first personal portfolio web page built entirely with semantic HTML, modern CSS styling, and Git version control.</p>
-                        <a href="#about" class="project-link">View Details &rarr;</a>
+            <a href="#quiz" class="btn btn-card">Resume Daily Quiz</a>
+        </div>
+    </section>
+
+    <div class="platform-layout">
+
+        <main class="main-content">
+
+            <section class="content-section" id="modules">
+                <div class="section-header">
+                    <h2>Academic Modules &amp; Courses</h2>
+                    <p>Core curriculum tracks structured with hands-on practice</p>
+                </div>
+
+                <div class="modules-grid">
+
+                    <article class="module-card featured-card">
+                        <div class="module-icon html-color">&lt;/&gt;</div>
+                        <div class="module-details">
+                            <span class="tag">Featured Core Module</span>
+                            <h3>5CS045: Full Stack Web Development</h3>
+                            <p>Master semantic HTML5 markup, responsive layouts using modern Flexbox and CSS Grid, and
+                                deploy websites to the student server.</p>
+                            <ul class="module-topics">
+                                <li>Semantic Elements (`header`, `nav`, `main`, `aside`, `footer`)</li>
+                                <li>Flexbox and CSS Grid Layout Architecture</li>
+                                <li>HTML5 Audio and Video Integration</li>
+                            </ul>
+                            <a href="#resources" class="module-link">View Learning Materials &rarr;</a>
+                        </div>
+                    </article>
+
+                    
+                    <article class="module-card">
+                        <div class="module-icon python-color">PY</div>
+                        <div class="module-details">
+                            <span class="tag">Beginner</span>
+                            <h3>Python Programming Fundamentals</h3>
+                            <p>Understand variables, conditional branching, loops, data structures, and foundational
+                                algorithms.</p>
+                            <a href="#modules" class="module-link">Enroll Track &rarr;</a>
+                        </div>
+                    </article>
+
+                    
+                    <article class="module-card">
+                        <div class="module-icon js-color">JS</div>
+                        <div class="module-details">
+                            <span class="tag">Intermediate</span>
+                            <h3>Interactive JavaScript Basics</h3>
+                            <p>Learn DOM manipulation, event handling, responsive UI interactions, and modern ES6
+                                syntax.</p>
+                            <a href="#modules" class="module-link">Enroll Track &rarr;</a>
+                        </div>
+                    </article>
+
+                    
+                    <article class="module-card">
+                        <div class="module-icon cpp-color">C++</div>
+                        <div class="module-details">
+                            <span class="tag">Systems</span>
+                            <h3>C++ Object-Oriented Design</h3>
+                            <p>Explore pointers, memory management, classes, inheritance, and foundational data
+                                structures.</p>
+                            <a href="#modules" class="module-link">Enroll Track &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            
+            <section class="content-section" id="multimedia">
+                <div class="section-header">
+                    <h2>Multimedia Learning Resources</h2>
+                    <p>Engage with video lectures, audio podcasts, and architectural diagrams</p>
+                </div>
+
+                <div class="media-container">
+
+                    
+                    <div class="media-box">
+                        <h3>Video Lecture: Introduction to Web Design</h3>
+                        <p class="media-desc">Watch this week's workshop preview covering semantic structure, multimedia
+                            integration, and layout techniques.</p>
+                        <div class="video-wrapper">
+                            <video controls width="100%" poster="images/screenshot.png">
+                                <source src="media/web-dev-intro.mp4" type="video/mp4">
+                                Your browser does not support the HTML5 video element.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="media-box">
+                        <h3>Audio Podcast: Coding Best Practices</h3>
+                        <p class="media-desc">Listen to Episode 1 of the Student Developer Podcast: Tips on responsive
+                            design and clean code.</p>
+                        <div class="audio-wrapper">
+                            <audio controls class="audio-player">
+                                <source src="media/podcast-ep1.mp3" type="audio/mpeg">
+                                Your browser does not support the HTML5 audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="media-box">
+                        <h3>Visual Study Aid &amp; Diagram</h3>
+                        <figure class="study-figure">
+                            <img src="images/screenshot.png" alt="Screenshot preview of responsive student web layout"
+                                class="figure-image">
+                            <figcaption>
+                                <strong>Figure 1.1:</strong> Visual wireframe and layout structure for the Week 1
+                                Student Learning Resource Platform.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="content-section" id="quiz">
+                <div class="section-header">
+                    <h2>Daily Interactive Quiz</h2>
+                    <p>Test your knowledge with instant feedback powered purely by CSS</p>
+                </div>
+
+                <div class="quiz-card">
+                    <p class="quiz-question">
+                        <strong>Question:</strong> Which HTML5 semantic element represents a thematic, self-contained
+                        grouping of content such as a blog post or course module?
+                    </p>
+
+                    <form class="quiz-form" onsubmit="return false;">
+                        
+                        <input type="radio" id="q_a" name="quiz_opt" class="quiz-radio">
+                        <label for="q_a" class="quiz-label wrong">A) &lt;div&gt;</label>
+
+                        
+                        <input type="radio" id="q_b" name="quiz_opt" class="quiz-radio">
+                        <label for="q_b" class="quiz-label correct">B) &lt;article&gt;</label>
+
+                        
+                        <input type="radio" id="q_c" name="quiz_opt" class="quiz-radio">
+                        <label for="q_c" class="quiz-label wrong">C) &lt;aside&gt;</label>
+
+                        
+                        <input type="radio" id="q_d" name="quiz_opt" class="quiz-radio">
+                        <label for="q_d" class="quiz-label wrong">D) &lt;footer&gt;</label>
+
+                        
+                        <div class="feedback correct-alert">
+                            <strong>Correct!</strong> The <code>&lt;article&gt;</code> element specifies
+                            independent, self-contained content that can be distributed separately.
+                        </div>
+                        <div class="feedback wrong-alert">
+                            <strong>Incorrect.</strong> Hint: Look for the tag meant for self-contained,
+                            syndicate-ready posts or cards.
+                        </div>
+                    </form>
+                    <p class="quiz-hint"><em>Click Option B to test the instant CSS pseudo-class
+                            selection!</em></p>
+                </div>
+            </section>
+
+            <section class="content-section" id="resources">
+                <div class="section-header">
+                    <h2>Study Materials &amp; External Documentation</h2>
+                    <p>Curated learning materials, cheatsheets, and official documentation links</p>
+                </div>
+
+                <div class="resources-grid">
+
+                    <div class="resource-card">
+                        <h3>Essential Documentation Links</h3>
+                        <ul class="resource-list">
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                                    rel="noopener">MDN Web Docs - HTML5 Guide</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+                                    rel="noopener">MDN Web Docs - Modern CSS Reference</a></li>
+                            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"
+                                    rel="noopener">CSS-Tricks - Complete Guide to Flexbox</a></li>
+                            <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+                                    rel="noopener">CSS-Tricks - Complete Guide to CSS Grid</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <h3>Recommended Study Steps</h3>
+                        <ol class="study-steps">
+                            <li>Review lecture slides on semantic tags and accessibility.</li>
+                            <li>Implement Flexbox navigation and responsive card layouts.</li>
+                            <li>Apply CSS Grid for multi-column page arrangements.</li>
+                            <li>Add HTML5 media controls and test across mobile screen sizes.</li>
+                        </ol>
                     </div>
                 </div>
+            </section>
 
-                <!-- Project 2 (Dummy Project) -->
-                <div class="project-card">
-                    <img src="images/screenshot.png" alt="Dummy Project Screenshot" class="project-img">
-                    <div class="project-info">
-                        <h3>Responsive Showcase</h3>
-                        <p>A sample project demonstrating mobile-first layout, CSS grid, flexible boxes, and clean accessible markup.</p>
-                        <a href="#projects" class="project-link">View Details &rarr;</a>
+        </main>
+
+        <aside class="sidebar">
+
+            <div class="side-card profile-card">
+                <img src="images/profile.jpg" alt="Photo of Student Alex Rivera" class="profile-img-lg">
+                <h3>Alex Rivera</h3>
+                <p class="student-id">Student ID: HCK-2026-045</p>
+                <p class="student-course">BSc (Hons) Computer Science</p>
+
+                <div class="profile-stats">
+                    <div class="stat-cell">
+                        <strong>5</strong>
+                        <span>Day Streak</span>
+                    </div>
+                    <div class="stat-cell">
+                        <strong>850</strong>
+                        <span>Total XP</span>
+                    </div>
+                    <div class="stat-cell">
+                        <strong>Week 1</strong>
+                        <span>Current Lab</span>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="section-title">
-                <h2>Contact Me</h2>
-                <div class="underline"></div>
+            <div class="side-card" id="announcements">
+                <h3>Announcements</h3>
+                <ul class="announcement-list">
+                    <li>
+                        <span class="announcement-date">Nov 25, 2026</span>
+                        <p><strong>Workshop 1 Submission:</strong> Deploy your platform to Herald College server using
+                            SCP.</p>
+                    </li>
+                    <li>
+                        <span class="announcement-date">Nov 28, 2026</span>
+                        <p><strong>Lab Viva:</strong> Prepare to explain your semantic tags, Flexbox, and Grid choices.
+                        </p>
+                    </li>
+                </ul>
             </div>
-            <p class="contact-desc">Feel free to reach out to me for inquiries, collaborations, or just a quick hello!</p>
 
-            <form action="#" method="post" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
+            <div class="side-card">
+                <h3>Weekly Leaderboard</h3>
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Student</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Sarah Chen</td>
+                            <td>1,420 XP</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>David Kumar</td>
+                            <td>1,210 XP</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Elena Rossi</td>
+                            <td>990 XP</td>
+                        </tr>
+                        <tr class="active-student">
+                            <td>4</td>
+                            <td>Alex (You)</td>
+                            <td>850 XP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
+        </aside>
 
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-                </div>
+    </div>
 
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Personal Portfolio. All rights reserved.</p>
+    <footer class="app-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Solo<span>Learn</span> Platform</h3>
+                <p>5CS045 Full Stack Web Development &bull; Week 1 Workshop Project</p>
+                <p class="sub-credit">Designed and developed with pure semantic HTML5 &amp; modern responsive CSS3.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#modules">Course Modules</a></li>
+                    <li><a href="#multimedia">Multimedia Materials</a></li>
+                    <li><a href="#resources">External Resources</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Herald College Kathmandu &bull; Student Learning Resource Platform &bull; All Rights
+                Reserved.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>
